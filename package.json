@@ -1,0 +1,23 @@
+{
+  "name": "bat-gu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "trilateration.js",
+  "dependencies": {
+    "assert": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surdu/bat-gu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surdu/bat-gu/issues"
+  },
+  "homepage": "https://github.com/surdu/bat-gu#readme"
+}
