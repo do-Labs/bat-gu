@@ -28,5 +28,5 @@ function getLocation(r1, r2, r3) {
 assert.deepEqual(math.vInvert([-1, 1]), [1, -1]);
 assert.deepEqual(math.vAdd([-1, 1], [1, -1]), [0, 0]);
 assert.equal(math.magnitude([1, 1]), Math.sqrt(2));
-assert.deepEqual(math.rotate([1, 1], -45), [1, 0]);
+assert.deepEqual(math.rotate([0, 1], 90), [1, 0]);
 // assert.deepEqual(getLocation(2, 2, 2), [0, 0]);

@@ -7,6 +7,19 @@ module.exports = {
 		return radians * (180 / Math.PI);
 	},
 
+	round: function(number, decimals) {
+		decimals = decimals || 5;
+		return Math.round(number * Math.pow(10, decimals)) / Math.pow(10, decimals);
+	},
+
+	sin: function(degrees) {
+		return this.round(Math.sin(this.toRadians(degrees)));
+	},
+
+	cos: function(degrees) {
+		return this.round(Math.cos(this.toRadians(degrees)));
+	},
+
 	vInvert: function(v) {
 		return v.map(function(member) {
 			return member * -1;
@@ -36,9 +49,8 @@ module.exports = {
 	},
 
 	rotate: function(v, theta) {
-		var rTheta = this.toRadians(theta);
-		var cos = Math.cos(rTheta);
-		var sin = Math.sin(rTheta);
+		var cos = this.cos(theta * -1);
+		var sin = this.sin(theta * -1);
 
 		var x = v[0] * cos - v[1] * sin;
 		var y = v[0] * sin + v[1] * cos;
